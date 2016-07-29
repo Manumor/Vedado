@@ -27,14 +27,15 @@ en:
         contestant:
           attributes:
             nombre: 
-              blank: no puede estar vacio
+              blank: "Debes de escribir tu %{attribute}"
             apellido: 
-              blank: no puede estar vacio
+              blank: "Debes de escribir tu %{attribute}"
             email:
-              blank: no puede estar vacio
-              taken: ya ha sido usado
-              invalid: no tiene el formato correcto
+              blank: "Debes de escribir un %{attribute}"
+              taken: "Este %{attribute} ya esa cogido"
+              invalid: "El formato del %{attribute} escrito es incorrecto"
+              confirmation: "Los dos %{attribute}s deben de ser identicos"
             estanco:
-              blank: de compra no puede estar vacio
+              blank: "Debes de rellenar el %{attribute} de compra"
             foto:
-              blank: de ticket de compra es necesario
+              blank: "Debes subir una %{attribute} del ticket de compra"

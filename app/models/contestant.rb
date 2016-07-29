@@ -1,7 +1,7 @@
 class Contestant < ActiveRecord::Base
 	validates :nombre, presence: true
 	validates :apellido, presence: true
-	validates :email, presence: true, uniqueness: true
+	validates :email, presence: true, uniqueness: true, confirmation: true
 	validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
 	validates :estanco, presence: true
 	has_attached_file :foto

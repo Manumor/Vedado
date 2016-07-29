@@ -125,7 +125,7 @@
 				<hr class="half-rule">
 			</div>
 		</div>
-		<div class="container" id='form-style' style="height: 680px">
+		<div class="container" id='form-style' style="height: 780px">
 			<div class="row" style="height: 600px">
 				<div class="col-sm-4"></div>
 				<div class="col-sm-4" style="height: 600px">
@@ -143,6 +143,11 @@
 					<div class="form-group" style="font-size:30px">
 						<%= f.label :email, "Email:"  %>
 						<%= f.text_field :email, class: "form-control", id: "email", placeholder: "ejemplo@email.com", type: "email" %>
+					</div>
+					<br>
+					<div class="form-group" style="font-size:30px">
+						<%= f.label :email_confirmation, "Confirma tu Email:"  %>
+						<%= f.text_field :email_confirmation, class: "form-control", id: "email", placeholder: "ejemplo@email.com", type: "email" %>
 					</div>
 					<br>
 					<div class="form-group" style="font-size:30px">
