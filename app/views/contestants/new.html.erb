@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="carousel-container">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<%= image_tag 'beach2.jpg', class: "item-image"%>
+						<div class="container">
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<img src="<%= asset_path( 'logo.jpg' ) %>" class="main-logo" href="#" >
+								</div>
+							</div>
+							<h1 class='overlay' style='font-size:80px'><strong>¿Quieres ganar un viaje al paraiso?</strong></h1>
+							<hr id="text-bar" style="background:white; border:0; height:5px">
+							<p class='text-under'>Vedado lo hace posible</p>
+							<button class="btn btn-lg btn-danger" id='drop' type="button"><a href="#main_form" class="scroll-link" data-id="second-section">Vamos</a></button>
+						</div>
+					</div>
+					<div class="item">
+						<%= image_tag 'car.jpg', class: "item-image"%>
+						<div class="container">
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<img src="<%= asset_path( 'logo.jpg' ) %>" class="main-logo" href="#">
+								</div>
+							</div>
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<h1 class='overlay' style='font-size:80px'><strong>¿Quieres ganar un viaje al paraiso?</strong></h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<hr id="text-bar" style="background:white; border:0; height:5px">
+								</div>
+							</div>
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<p class='text-under'>Vedado lo hace posible</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<button class="btn btn-lg btn-danger" id='drop' type="button"><a href="#main_form" class="scroll-link" data-id="second-section">Vamos</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<%= image_tag 'cigar_test.jpg', class: "item-image" %>
+						<div class="container">
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<img src="<%= asset_path( 'logo.jpg' ) %>" class="main-logo" href="#" >
+								</div>
+							</div>
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<h1 class='overlay' style='font-size:80px'><strong>¿Quieres ganar un viaje al paraiso?</strong></h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<hr id="text-bar" style="background:white; border:0; height:5px">
+								</div>
+							</div>
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<p class='text-under'>Vedado lo hace posible</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class=".col-md-4"></div>
+								<div class=".col-md-4">
+									<button class="btn btn-lg btn-danger" id='drop' type="button"><a href="#main_form" class="scroll-link" data-id="second-section">Vamos</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<!-- Second page section -->
+		<div class="page-section bs-docs-featurette" id="second-section" >
+			<div class="container" id="vamos">
+				<h1 class="text-center" id="main_form" style="margin-top: 40px;">Gana un viaje a Cuba con tus puros favoritos</h1>
+				<p class="lead text-center"> Es muy facil, pon tu nombre y apellido, tu email y una foto del ticket de compra de tus puros Vedado</p>
+				<hr class="half-rule">
+			</div>
+		</div>
+		<div class="container" id='form-style' style="height: 680px">
+			<div class="row" style="height: 600px">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4" style="height: 600px">
+					<%= form_for @contestant do |f| %>
+					<div class="form-group" style="font-size:30px;  margin-top: 0%">
+						<%= f.label :nombre, "Nombre:" %>
+						<%= f.text_field :nombre, class: "form-control", id: "name", placeholder: "Nombre", type: "name" %>
+					</div>
+					<br>
+					<div class="form-group" style="font-size:30px">
+						<%= f.label :apellido, "Apellidos:" %>
+						<%= f.text_field :apellido, class: "form-control", id: "surname", placeholder: "Apellidos", type: "surname" %>
+					</div>
+					<br>
+					<div class="form-group" style="font-size:30px">
+						<%= f.label :email, "Email:"  %>
+						<%= f.text_field :email, class: "form-control", id: "email", placeholder: "ejemplo@email.com", type: "email" %>
+					</div>
+					<br>
+					<div class="form-group" style="font-size:30px">
+						<%= f.label :estanco, "Estanco:" %>
+						<%= f.text_field :estanco, class: "form-control", id: "estanco", placeholder: "Direccion de estanco de compra" %>
+					</div>
+					<br><br>
+					<%= f.file_field :foto, class: 'filestyle', id: 'picture', :'data-classButton' => 'btn btn-primary', :'data-input' => 'false', classIcon:  'icon-plus', :'data-buttonText' => 'Sube tu ticket de compra'  %>
+					<br><br>
+					<button type="submit" class="btn btn-primary btn-lg" style="left: 60%;" id="listed">Apuntame</button>
+					<div id="confirmation">
+					<br>
+					<% if @contestant.errors.any? %>
+					<div class= "alert alert-danger">
+						<ul>
+							<% @contestant.errors.full_messages.each do |msg| %>
+							<li><%= msg %></li>
+							<% end %>
+						</ul>
+					</div>
+					<% else %>
+						<% flash.each do |name, msg| -%>
+  							<%= content_tag :div, msg, class: "alert alert-success"  %>
+						<% end -%>
+					<% end %>
+					<% end %>
+					<br>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Third page section -->
+		<div class="container-cigars" style="background-image: url(<%= asset_path 'beach.jpg' %>) ; background-size: 100%; width: 100%; height: 450px">
+			<div class="row">
+				<div class="containter">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4">
+						<h1 class="text-center" style="margin-bottom: 60px;">Prueba nuestras otras marcas</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				
+			</div>
+		</div>
+	</body>
+	<%= render('layouts/footer.html.erb') %>
+</html>
