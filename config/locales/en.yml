@@ -27,15 +27,15 @@ en:
         contestant:
           attributes:
             nombre: 
-              blank: "Debes de escribir tu %{attribute}"
+              blank: "Debes escribir tu nombre"
             apellido: 
-              blank: "Debes de escribir tu %{attribute}"
+              blank: "Debes escribir tu apellido"
             email:
-              blank: "Debes de escribir un %{attribute}"
-              taken: "Este %{attribute} ya esa cogido"
-              invalid: "El formato del %{attribute} escrito es incorrecto"
-              confirmation: "Los dos %{attribute}s deben de ser identicos"
+              blank: "Debes escribir un email"
+              taken: "Este email ya esa cogido"
+              invalid: "El formato del email escrito es incorrecto"
+              confirmation: "El email tiene que ser identicos en las dos secciones"
             estanco:
-              blank: "Debes de rellenar el %{attribute} de compra"
+              blank: "Debes rellenar el estanco de compra"
             foto:
-              blank: "Debes subir una %{attribute} del ticket de compra"
+              blank: "Debes subir una foto del ticket de compra"

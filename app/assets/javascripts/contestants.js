@@ -1,6 +1,13 @@
-$(document).ready(function() {
-	$("#listed").click(function(){
-		$("#form-style").style.height = "750px";
-		document.body.appendChild($("#form-style"));
-	});
+// $(document).ready(function() {
+// 	$("#listed").click(function(){
+// 	});
+// });data-src=
+$(window).load(function () {
+    $('.main-gallery').flickity({
+    	//imagesLoaded: true,
+        wrapAround: true,
+        autoPlay: 1500,
+        lazyLoad: 3
+    });
 });
+

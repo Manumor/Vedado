@@ -13,13 +13,6 @@ class ContestantsController < ApplicationController
 			render 'new'
 		end 			
 	end 
-	# def check_email
- #    	if Contestant.where(params[:email]).exists?
- #      		render json: {message: "ERROR"}
- #    	else
- #      		render json: {message: "SUCCESS"}
- #    	end
- #  	end
 	private 
 	def contestant_params 
 		params.require(:contestant).permit(:nombre, :apellido, :email, :estanco, :foto)

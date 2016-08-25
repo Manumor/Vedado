@@ -129,16 +129,13 @@
     background-color: #404040 !important;
     padding: 10px 0;
     height: 60px;
+    margin-top: 65px;
 }
 
 .terminos_text {
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
-}
-
-.form-group {
-    text-align: none !important;
 }
 
 .overlay {
@@ -174,7 +171,22 @@
 }
 
 .field_with_errors {
-    display: inline;
+    color: black;
+}
+
+.gallery-cell-image {
+    width: 400px;
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+.gallery-cell-image.flickity-lazyloaded, .gallery-cell-image.flickity-lazyerror {
+    opacity: 1;
+}
+
+.error {
+    font-size: 20px;
     color: red;
-    margin-bottom: 0;
+    margin: 0 auto;
 }

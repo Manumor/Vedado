@@ -47,3 +47,4 @@ gem 'font-awesome-sass'
 gem "font-awesome-rails"
 gem 'formtastic', '~> 3.0'
 gem "paperclip", "~> 5.0.0"
+gem "lazyload-rails"
