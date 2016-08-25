@@ -1,0 +1,193 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ */
+
+
+ body {
+    overflow-x:hidden;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    position: relative;
+    background-color: #333 !important;
+    border-color: #333 !important;
+}
+
+.main-logo {
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+.img-responsive {
+    margin: 0 auto !important;
+}
+
+.main-form {
+    width:100%;
+    background-image: url("cigar_test.jpg") !important;
+    width: 100% !important;
+}
+
+#homepage {
+    background-image: url("cigar_test.jpg");
+    background-size: 100%;
+}
+
+#confirm a {
+    color: #000000;
+    text-decoration: none; 
+}
+
+#confirm {
+    position: absolute;
+    top: 52%;
+    left: 32%;
+    background-color: #D5B03A !important;
+    border-radius: 0 !important;
+    border-color: white !important;
+}
+
+#confirm a {
+    color: white !important;
+}
+
+#restrict {
+    color: #000000;
+    position: absolute;
+    top: 52%;
+    left: 58%;
+    background-color: #D5B03A !important;
+    color: white !important;
+    border-radius: 0 !important;
+    border-color: white !important;
+}
+
+#notice {
+    top: 60%;
+    position: absolute;
+    left: 43%;
+}
+
+.carousel-container {
+   padding: 0;
+   width: 100%;
+ }
+
+ .carousel .item {
+  height: 900px;
+}
+
+.item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 900px;
+}
+
+#drop a {
+    text-decoration: none !important;
+    color: white;
+    background:none;
+}
+
+#drop {
+    color:white;
+    position:absolute;
+    z-index:12;
+    top:83%;
+    left:47.5%;
+    text-align:center;
+    background-color: #D5B03A !important;
+    border-color: white;
+}
+
+.logo {
+    width: 500px;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+.footer {
+    background-color: #404040 !important;
+    padding: 10px 0;
+    height: 60px;
+    margin-top: 65px;
+}
+
+.terminos_text {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.overlay {
+  color:white;
+  position:absolute;
+  z-index:12;
+  bottom:58%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+
+.text-under {
+    color:white;
+    position:absolute;
+    z-index:12;
+    top:45%;
+    width:100%;
+    text-align:center;
+    left: 0;
+    font-size: 50px;
+    color: white;
+    margin-top: 5px;
+}
+
+#text-bar {
+    color:white;
+    position:absolute;
+    z-index:12;
+    top:40%;
+    width:80%;
+    left: 10%;
+}
+
+.field_with_errors {
+    color: black;
+}
+
+.gallery-cell-image {
+    width: 400px;
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+.gallery-cell-image.flickity-lazyloaded, .gallery-cell-image.flickity-lazyerror {
+    opacity: 1;
+}
+
+.error {
+    font-size: 20px;
+    color: red;
+    margin: 0 auto;
+}
