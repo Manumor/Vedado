@@ -175,17 +175,6 @@
     color: black;
 }
 
-.gallery-cell-image {
-    width: 400px;
-    display: block;
-    opacity: 0;
-    -webkit-transition: opacity 0.4s;
-    transition: opacity 0.4s;
-}
-.gallery-cell-image.flickity-lazyloaded, .gallery-cell-image.flickity-lazyerror {
-    opacity: 1;
-}
-
 .error {
     font-size: 20px;
     color: red;
