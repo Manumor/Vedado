@@ -49,3 +49,4 @@ gem 'formtastic', '~> 3.0'
 gem "paperclip", "~> 5.0.0"
 gem "lazyload-rails"
 gem 'rails_12factor', group: :production
+gem 'puma'
