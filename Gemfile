@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.18.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -15,9 +15,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.2', '>= 4.2.1'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '~> 5.0', '>= 5.0.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -34,19 +34,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'byebug', '~> 9.0', '>= 9.0.5'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'twitter-bootstrap-rails'
-gem 'font-awesome-sass'
-gem "font-awesome-rails"
+gem 'tzinfo-data', '~> 1.2016', '>= 1.2016.6', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'twitter-bootstrap-rails', '~> 3.2', '>= 3.2.2'
+gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'formtastic', '~> 3.0'
 gem "paperclip", "~> 5.0.0"
-gem "lazyload-rails"
-gem 'rails_12factor', group: :production
-gem 'puma'
+gem 'rails_12factor', '~> 0.0.3', group: :production
+gem 'puma', '~> 3.6'
